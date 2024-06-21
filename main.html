@@ -1,35 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-
-  <body>
+    <title>Company Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+           padding-top: 40px;
+			width: 100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .logo-details {
+            display: flex;
+            align-items: right;
+        }
+        .logo_name {
+            font-size: 30px;
+            font-weight: bold;
+			align-items: left;
+        }
+        .media-icons a {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .media-icons a:hover {
+            color: #ffa500;
+        }
+        .link-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding: 40px 20px;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        .link-box {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        .link-box h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .link-box h2::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .link-box a {
+            display: block;
+            color: #bbb;
+            margin-bottom: 8px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .link-box a:hover {
+            color: #fff;
+        }
+        .bottom-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            padding: 20px;
+            width: 95%;
+            background: #333;
+        }
+        .bottom-details p {
+            margin: 0;
+            color: #bbb;
+        }
+        .bottom-details a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        .bottom-details a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .top, .bottom-details {
+                flex-direction: row;
+                align-items: left;
+            }
+            .link-boxes {
+                flex-direction: row;
+                align-items: left;
+            }
+            .link-box {
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
     <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <span class="logo_name">company</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <div class="link-box">
+                    <h2>Links</h2>
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Get Started</a>
+                </div>
+                <div class="link-box">
+                    <h2>Services</h2>
+                    <a href="#">App Design</a>
+                    <a href="#">Web Design</a>
+                    <a href="#">Logo Design</a>
+                    <a href="#">Banner Design</a>
+                </div>
+                <div class="link-box">
+                    <h2>Other services</h2>
+                    <a href="#">SEO</a>
+                    <a href="#">Content Marketing</a>
+                    <a href="#">Prints</a>
+                    <a href="#">Social Media</a>
+                </div>
+                <div class="link-box">
+                    <h2>Contact</h2>
+                    <a href="tel:+918879887262">+91 8879887262</a>
+                    <a href="tel:+918879887262">+91 8879887262</a>
+                    <a href="mailto:contact@company.com">contact@company.com</a>
+                </div>
+            </div>
         </div>
-        <div class="link-boxes">
-          <!-- your code here -->
+        <div class="bottom-details">
+            <p>Copyright © 2021 company.</p>
+            <a href="#">Privacy policy</a>
         </div>
-      </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
     </footer>
-  </body>
+</body>
 </html>
