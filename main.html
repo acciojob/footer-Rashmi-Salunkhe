@@ -22,7 +22,7 @@
             flex-direction: column;
             align-items: center;
             max-width: 1200px;
-            margin: 5px auto;
+            margin: 0 auto;
         }
         .top {
             display: flex;
@@ -32,21 +32,38 @@
         }
         .logo-details {
             display: flex;
-            align-items: right;
         }
         .logo_name {
             font-size: 30px;
             font-weight: bold;
-			align-items: left;
         }
         .media-icons a {
-            color: #fff;
+           color: #fff;
             font-size: 20px;
             margin: 0 10px;
             transition: color 0.3s;
+            border-radius: 80%;
+            padding: 10px;
+            display: inline-block;   
+			text-decoration: none;
+		}
+		.media-icons a.fa-facebook {
+            background-color: #3b5998;
+        }
+        .media-icons a.fa-twitter {
+            background-color: #00aced;
+        }
+        .media-icons a.fa-instagram {
+            background-color: #e4405f;
+        }
+        .media-icons a.fa-linkedin {
+            background-color: #0077b5;
+        }
+        .media-icons a.fa-youtube {
+            background-color: #ff0000;
         }
         .media-icons a:hover {
-            color: #ffa500;
+            opacity: 0.7;
         }
         .link-boxes {
             display: flex;
@@ -54,8 +71,6 @@
             justify-content: space-between;
             width: 100%;
             padding: 40px 20px;
-            border-top: 1px solid #333;
-            border-bottom: 1px solid #333;
         }
         .link-box {
             flex: 1;
